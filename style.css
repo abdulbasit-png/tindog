@@ -1,6 +1,4 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-}
+
 #title{
     background-color:#ff4c83;
 }
@@ -9,7 +7,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: white;
-    size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.5;
 }
 #container-fluid{
@@ -20,11 +18,10 @@ body{
 
     padding: 3% 15% ;
 }
-
 /* navigaion bar */
 
 #nav{
-    padding: 0 0  4.5rem;
+    padding: 0 -4px  4.5rem;
     
 
 }
@@ -41,13 +38,82 @@ body{
 padding: 0 18px;    
 }
 .nav-link{
-    font-size:1.4rem;
+    font-size:19px;
     font-family: 'Montserrat', sans-serif;
     font-weight:200px;
 
 }
+/* download apple & Andriod buttons */
 .download-button{
     margin:5% 3% 5% 0;
     
 }
 
+/* title image */
+#title-img{
+    padding-bottom: 5% ;
+    width: 60%;
+    transform: rotate(25deg);
+
+}
+
+/* feature */
+
+
+#features{
+    padding:7% 10% ;
+    
+    
+}
+.feature-box{
+    text-align:center;
+     
+}
+.icon {
+    color:#ef8172;
+    margin-bottom:2rem ;
+}
+
+.icon:hover{
+    color:#ff4c83;
+}
+
+/* testimonials */
+
+#testimonials{
+    text-align: center;
+    padding:7% 10%;
+    background-color:#ef8172;
+    color:white;
+
+}
+#h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:3rem;
+    line-height: 1.5;
+}
+
+.Testimonials-img{
+    width:10%;
+    border-radius: 100%;
+    margin:1rem;
+    
+}
+
+/* Press */
+
+#press{
+    background-color:#ef8172;
+    text-align: center;
+    padding: 1%;
+}
+
+.press-img{
+    width:15%;
+    margin:10px 10px 60px 40px
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
