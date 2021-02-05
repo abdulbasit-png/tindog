@@ -6,7 +6,7 @@
   <title>TinDog</title>
   <!-- stylesheet -->
   <link rel="stylesheet" href="style.css">
-  <!-- h1 fonts -->
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap" rel="stylesheet">
 <!-- ubunto fontstyle -->
@@ -65,8 +65,8 @@
     <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
   </div>
   <div class="row">
-  <div class="col-lg-12 col-sm-12">
-    <img src="iphone6.png" alt="">
+  <div  class="col-lg-12 col-md-12 col-sm-12 ">
+    <img id="title-img" src="iphone6.png" alt="">
   </div>
 
 </section>
@@ -75,30 +75,61 @@
 <!-- Features -->
 
 <section id="features">
+  <div class="row">
 
+    <div class=" feature-box col-lg-4">
+  <i id="icon" class="icon fas fa-check-circle fa-4x"></i>
   <h3>Easy to use.</h3>
-  <p>So easy to use, even your dog could do it.</p>
+  <p>So easy to use, even your<br> dog could do it.</p>
+</div>
 
+
+  <div class=" feature-box col-lg-4">
+  <i id="icon" class="icon  fas fa-bullseye fa-4x"></i>
   <h3>Elite Clientele</h3>
-  <p>We have all the dogs, the greatest dogs.</p>
+  <p>We have all the dogs, the <br> greatest dogs.</p>
+</div>
 
+
+  <div class=" feature-box col-lg-4">
+  <i id="icon" class="icon fas fa-heart fa-4x"></i>
   <h3>Guaranteed to work.</h3>
-  <p>Find the love of your dog's life or your money back.</p>
-
+  <p>Find the love of your dog's <br> life or your money back.</p>
+</div></div>
 </section>
 
 
 <!-- Testimonials -->
 
 <section id="testimonials">
-
-  <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-  <img src="images/dog-img.jpg" alt="dog-profile">
+  <div id="carouselExampleIndicators" class="carousel slide"  data-bs-interval="2000"  data-ride="carousel">
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h2 id="h2">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+  <img class="Testimonials-img" src="dog-img.jpg" alt="dog-profile">
   <em>Pebbles, New York</em>
+        
+      </div>
+      <div class="carousel-item">
+        <h2 id="h2" class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+  <img class="Testimonials-img" src="lady-img.jpg" alt="lady-profile">
+  <em>Beverly, Illinois</em>
+      </div>
+     
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </a>
+  </div>
 
-  <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-  <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-  <em>Beverly, Illinois</em> -->
+  
+
+  
 
 </section>
 
@@ -106,10 +137,10 @@
 <!-- Press -->
 
 <section id="press">
-  <img src="images/bizinsider.png" alt="tc-logo">
-  <img src="images/.tnw.png" alt="tnw-logo">
-  <img src="images/bizinsider.png" alt="biz-insider-logo">
-  <img src="images/mashable.png" alt="mashable-logo">
+  <img class="press-img" src="bizinsider.png" alt="tc-logo">
+  <img class="press-img" src="tnw.png" alt="tnw-logo">
+  <img class="press-img" src="bizinsider.png" alt="biz-insider-logo">
+  <img class="press-img" src="mashable.png" alt="mashable-logo">
 
 </section>
 
