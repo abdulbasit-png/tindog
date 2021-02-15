@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
 
+<html>
 <head>
   <meta charset="utf-8">
   <title>TinDog</title>
+
+
+  <link rel="stylesheet" href="https://www.creative-tim.com/product/paper-kit-2-pro"> 
+
+
   <!-- stylesheet -->
   <link rel="stylesheet" href="style.css">
   <!-- fonts -->
@@ -12,11 +17,18 @@
 <!-- ubunto fontstyle -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<!-- Trending -->
+<link rel="html" href="trending.html">
+
+<!-- About -->
+<link rel="about.html" href="signup.html">
 
 <!-- icon link -->
-<script src="https://kit.fontawesome.com/3981a9ce76.js" crossorigin="anonymous"></script>  
+<script src="https://kit.fontawesome.com/3981a9ce76.js" crossorigin="anonymous"></script>
+
 <!-- bootstrap script -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 
@@ -37,13 +49,18 @@
      
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#footer">contact</a>
         </li>
         <li class="nav-item" id="nav-item">
-          <a class="nav-link" href="#">Trending</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#cta">download</a>
+        </li>
+
+        <li>
+         <a class=" btn btn-outline-light" href="signup.html">Sign up</a>
+         
         </li>
       </ul>
       
@@ -59,14 +76,15 @@
   <!-- Title -->
   <div class="container">
  <div class="row">
-  <div class="col-lg-7">
+  <div class="col-lg-7  " id=container>
     <h1 class="detail">Meet new and interesting dogs nearby.</h1>
-    <button type="button"  class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
-    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+    <a href="https://apps.apple.com/us/app/tinder-dating-new-people/id547702041"><button type="button"  class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button> </a>
+  
+    <a href="https://play.google.com/store/apps/details?id=com.tinder&hl=en&gl=US"> <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button> </a>
   </div>
   <div class="row">
-  <div  class="col-lg-12 col-md-12 col-sm-12 ">
-    <img id="title-img" src="iphone6.png" alt="">
+  <div  class="col-lg-12  ">
+    <img class="title-img " src="iphone6.png" alt="">
   </div>
 
 </section>
@@ -144,7 +162,6 @@
 
 </section>
 
-
 <!-- Pricing -->
 
 <section id="pricing">
@@ -152,30 +169,54 @@
   <h2>A Plan for Every Dog's Needs</h2>
   <p>Simple and affordable price plans for your and your dog.</p>
 
+  <div class="row">
+    <div class="pricing-colum col-lg-4 col-md-6 ">
+  <div class=" card text-dark bg-light mb-3 " >
+    <div class="card-data">
+    <div class="card-header"><h3>Chihuahua</h3></div>
+    <div class="card-body">
+      <h2 class="card-title">Free</h2>
 
-  <h3>Chihuahua</h3>
-  <h2>Free</h2>
-  <p>5 Matches Per Day</p>
-  <p>10 Messages Per Day</p>
-  <p>Unlimited App Usage</p>
-  <button type="button">Sign Up</button>
+      <p class="card-data-padding">5 Matches Per Day</p>
+      <p class="card-data-padding">10 Messages Per Day</p>
+      <p class="card-data-padding">Unlimited App Usage</p>
+      <a href="signup.html"><button class=" btn btn-outline-dark signup" type="button">Sign Up</button></a>
+    </div>
+    </div>
+  </div></div>
 
 
-  <h3>Labrador</h3>
-  <h2>$49 / mo</h2>
-  <p>Unlimited Matches</p>
-  <p>Unlimited Messages</p>
-  <p>Unlimited App Usage</p>
-  <button type="button">Sign Up</button>
+  <div class="pricing-colum col-lg-4 col-md-6">
+  <div class="card text-dark bg-light mb-3   ">
+    <div class="card-data">
+    <div class="card-header"> <h3>Labrador</h3></div>
+    <div class="card-body">
+      <h2>$49 / mo</h2>
 
+  <p class="card-data-padding">Unlimited Matches</p>
+  <p class="card-data-padding" >Unlimited Messages</p>
+  <p class="card-data-padding">Unlimited App Usage</p>
+  <a href="signup.html"> <button class="btn btn-dark signup" type="button">Sign Up</button> </a>
+</div>
+    </div>
+  </div></div>
 
-  <h3>Mastiff</h3>
-  <h2>$99 / mo</h2>
-  <p>Pirority Listing</p>
-  <p>Unlimited Matches</p>
-  <p>Unlimited Messages</p>
-  <p>Unlimited App Usage</p>
-  <button type="button">Sign Up</button>
+<div class="pricing-colum col-lg-4">
+  <div class="card text-dark bg-light mb-3 " >
+    <div class="card-data">
+    <div class="card-header"><h3>Mastiff</h3></div>
+    <div class="card-body">
+      <h2>$99 / mo</h2>
+
+      <p class="card-data-padding">Pirority Listing</p>
+      <p class="card-data-padding" >Unlimited Matches</p>
+      <p class="card-data-padding">Unlimited Messages</p>
+      <p class="card-data-padding">Unlimited App Usage</p>
+     <a href="signup.html"><button class="btn btn-dark signup" type="button">Sign Up</button></a> 
+    </div>
+    </div>
+  </div></div>
+</div> 
 
 </section>
 
@@ -184,19 +225,27 @@
 
 <section id="cta">
 
-  <h3>Find the True Love of Your Dog's Life Today.</h3>
-  <button type="button">Download</button>
-  <button type="button">Download</button>
+  <h2 class="cta-heading">Find the True Love of Your Dog's Life Today.</h2>
+  <a href="https://apps.apple.com/us/app/tinder-dating-new-people/id547702041"><button type="button"  class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button> </a>
 
+   <a href="https://play.google.com/store/apps/details?id=com.tinder&hl=en&gl=US"> <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button> </a>
 </section>
 
 
 <!-- Footer -->
 
 <footer id="footer">
+ <a href="https://www.facebook.com/abdulbasit9990"><i id="footer-icons" class=" fab  fa-facebook "></i></a> 
 
-  <p>© Copyright 2018 TinDog</p>
+ <a href="https://www.instagram.com/5_5_mehar/"><i id="footer-icons" class="  fab fa-instagram "></i> </a>
 
+ <a href="https://www.messenger.com/"> <i id="footer-icons" class="fab fa-facebook-messenger "></i> 
+</a>
+<a href=" "> <i  id="footer-icons" class="fas fa-envelope"></i> </a>
+
+    <p class=" copyright">© Copyright 2018 TinDog</p>
+
+  
 </footer>
 
 
